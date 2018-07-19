@@ -5,6 +5,34 @@
 git config core.sshCommand "ssh -i ~/.ssh/id_rsa_example -F /dev/null"
 ```
 
+# remote
+
+See remote
+
+```
+git remote -v
+```
+
+Set remote (on github)
+
+https://help.github.com/articles/changing-a-remote-s-url/#switching-remote-urls-from-ssh-to-https
+
+```
+git remote set-url origin git@github.com:USERNAME/REPOSITORY.git
+```
+
+# github
+
+Check SSH key on github
+
+```
+ssh -i ~/.ssh/einfachnuralex -T git@github.com
+```
+
+Response:
+> Hi einfachnuralex! You've successfully authenticated, but GitHub does not provide shell access.
+
+
 # SSL
 
 https://stackoverflow.com/questions/11621768/how-can-i-make-git-accept-a-self-signed-certificate
