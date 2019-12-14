@@ -1,5 +1,9 @@
 # tcpdump
 
+### Extract HTTP Request URL's
+
+`tcpdump -s 0 -v -n -l | egrep -i "POST /|GET /|Host:"`
+
 ### Capture the traffic of a specific interface:
 
 `tcpdump -i {{eth0}}`
