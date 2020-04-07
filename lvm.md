@@ -4,7 +4,7 @@
 
 pv
 ```
-display -m
+pvdisplay -m
 ```
 
 lv 
