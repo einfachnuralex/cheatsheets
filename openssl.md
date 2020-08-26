@@ -1,6 +1,13 @@
 
 # openssl magic
 
+## Display formated Text of a pem formatet cert.
+
+```
+openssl x509 -in domian.pem -text
+```
+
+
 ## Self signed ca
 
 ```

@@ -78,3 +78,9 @@ Log for specific file or folder
 git log .
 git log file
 ```
+
+nachtraeglich commit anpassen mit anderem User / Email / Signatur
+```
+git rebase --exec 'git commit --amend --no-edit -n -S --author="user name <e@mail>"' -i commit-hash
+```
+d.h. in den fall alles vom commit-hash bis zum akutellen HEAD wird umgebaut(!).
