@@ -14,6 +14,12 @@ openssl x509 -in domian.pem -text
 openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout ca-key.pem -out ca.pem
 ```
 
+Create self sign cert for URL
+
+```bash
+openssl req -x509 -newkey rsa:4096 -keyout key.pem -out cert.pem -sha256 -days 3650 -nodes -subj "/CN=${URL}/C=XX/ST=StateName/L=CityName/O=CompanyName/OU=CompanySectionName/CN=CommonNameOrHostname"
+```
+
 ## Create key, cert & sign ca
 
 ```
